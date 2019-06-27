@@ -27,11 +27,27 @@ const Layout = ({ children }) => (
             paddingTop: 0,
           }}
         >
-          <main>{children}</main>
+          <main role="main">
+            {children}
+          </main>
           <footer>
             © {new Date().getFullYear()}, Built with
             {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
+            <a href="https://www.gatsbyjs.org">Gatsby</a> for the <a href="https://indieweb.org">IndieWeb</a>
+
+            <p>
+              Follow <a class="h-card" rel="me" href="https://www.funwhilelost.com/">funwhilelost</a> on
+              {" "}
+              <a href='https://twitter.com/funwhilelost' rel='me'>Twitter (@funwhilelost)</a>,
+              {" "}
+              <a href='https://instagram.com/funwhilelost' rel='me'>Instagram (@funwhilelost)</a>,
+              {" "}
+              <a href='https://social.coop/@funwhilelost' rel='me'>Mastodon (@funwhilelost@social.coop)</a>,
+              {" "}
+              <a href='https://github.com/funwhilelost' rel='me'>GitHub</a>, or send him an
+              {" "}
+              <a class="u-email" href='mailto:andy@funwhilelost.com' rel='me'>email</a>
+            </p>
           </footer>
         </div>
       </>
