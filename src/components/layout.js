@@ -36,7 +36,7 @@ const Layout = ({ children }) => (
             <a href="https://www.gatsbyjs.org">Gatsby</a> for the <a href="https://indieweb.org">IndieWeb</a>
 
             <p>
-              Follow <a class="h-card" rel="me" href="https://www.funwhilelost.com/">funwhilelost</a> on
+              Follow <a className="h-card" rel="me" href="https://www.funwhilelost.com/">funwhilelost</a> on
               {" "}
               <a href='https://twitter.com/funwhilelost' rel='me'>Twitter (@funwhilelost)</a>,
               {" "}
@@ -46,7 +46,7 @@ const Layout = ({ children }) => (
               {" "}
               <a href='https://github.com/funwhilelost' rel='me'>GitHub</a>, or send him an
               {" "}
-              <a class="u-email" href='mailto:andy@funwhilelost.com' rel='me'>email</a>
+              <a className="u-email" href='mailto:andy@funwhilelost.com' rel='me'>email</a>
             </p>
           </footer>
         </div>

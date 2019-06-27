@@ -1,15 +1,13 @@
 import React from 'react'
 import { MDXProvider } from '@mdx-js/tag'
 import Layout from './layout'
-import Helmet from 'react-helmet'
+import SEO from './seo'
 
 const BlogPostLayout = ({ children, pageContext }) => {
   const { title, author, date, summary } = pageContext.frontmatter
   return (
     <Layout>
-      <Helmet>
-        <title>{title}</title>
-      </Helmet>
+      <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
       <article className="h-card">
         <header>
           <h1 className="p-name">{title}</h1>
@@ -22,13 +20,12 @@ const BlogPostLayout = ({ children, pageContext }) => {
         <MDXProvider>{children}</MDXProvider>
         <aside>
           <span>Author: <span className="vcard author"><span className="fn">{author}</span></span></span>
-          <time
+          <div
             className="dt-published"
-            itemprop="datepublished"
-            datetime={date}
+            itemProp="datepublished"
           >
-            {new Date(date).toISOString()}
-          </time>
+            {date}
+          </div>
         </aside>
       </article>
     </Layout>

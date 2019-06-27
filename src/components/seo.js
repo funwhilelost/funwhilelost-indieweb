@@ -60,7 +60,10 @@ function SEO({ description, lang, meta, keywords, title }) {
                   : []
               )
               .concat(meta)}
-          />
+          >
+            <link rel="webmention" href="https://webmention.io/www.funwhilelost.com/webmention" />
+            <link rel="pingback" href="https://webmention.io/www.funwhilelost.com/xmlrpc" />
+          </Helmet>
         )
       }}
     />
